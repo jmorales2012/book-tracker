@@ -17,13 +17,14 @@ End Goals
 
 
 Front End
-[ ] Make rough design of page layout
-[ ] Create index.html
-[ ] Add links for styles.css, skeleton.css, client.js
-[ ] Create page header
-[ ] Add sample books and style inline
-[ ] Create form to input books (title, author, status, date finished)
-[ ] Make form inline and sleeek
+[X] Make rough design of page layout
+[X] Create index.html
+[X] Add links for styles.css, skeleton.css, client.js
+[X] Create page header
+[X] Add sample books and style inline
+[X] Create form to input books (title, author, status, date finished)
+[ ] Add event listener for form submit on <a> tag
+[X] Make form inline and sleek
 [ ] Establish POST request for /books
 
 
@@ -50,7 +51,10 @@ Server
 
 
 Future Goals
-* Let user sign up
-* User sees their own lists
-* Let user click on book and see detailed info
-  * Title, Author, Pages, Date Published, Cover Art, Buy Link
+[ ] Let user sign up
+[ ] User sees their own lists
+[ ] Finished books are moved to bottom of list
+[ ] Compile info on user data
+  [ ] How many books were finished each month/year
+[ ] Let user click on book and see detailed info
+  [ ] Title, Author, Pages, Date Published, Cover Art, Buy Link

@@ -1,0 +1,56 @@
+.menu {
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
+}
+
+.date-selector {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.date-selector:focus {
+  outline: none;
+  border: 1px solid rgb(51, 195, 240);
+}
+
+.width-80 {
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.button-submit {
+  color: white;
+  background-color: #1EBA88;
+}
+
+.button-submit:hover {
+  color: white;
+}
+
+.button-edit {
+  color: white;
+  background-color: #FF2C54;
+}
+
+.button-edit:hover {
+  color: white;
+}
+
+.button {
+  width: 130px;
+}

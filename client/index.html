@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="menu">
+      <a href="#" class="button">Login</a>
+      <a href="#" class="button button-primary">Sign Up</a>
+  </div>
+  <h1>Book Tracker</h1>
+  <table class="center width-80 book-container">
+    <thead class="book-info">
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Status</th>
+        <th>Date Finished</th>
+        <th>Add/Delete</th>
+      </tr>
+    </thead>
+    <tbody class="books">
+      <tr class="book">
+        <td>Extreme Ownership</td>
+        <td>Jocko Wilick</td>
+        <td>Reading</td>
+        <td></td>
+        <td><a href="#" class="button button-edit">Delete</a></td>
+      </tr>
+      <tr class="book">
+        <td>Sam Walton: Made in America</td>
+        <td>Sam Walton</td>
+        <td>Not Read</td>
+        <td></td>
+        <td><a href="#" class="button button-edit">Delete</a></td>
+      </tr>
+      <form class="tr">
+        <td><input type="text" placeholder="Title"></td>
+        <td><input type="text" placeholder="Author"></td>
+        <td><select name="status" id="status">
+          <option value="read">Read</option>
+          <option value="reading">Reading</option>
+          <option value="not-read">Not Read</option>
+        </select></td>
+        <td><input class="date-selector" type="date" name="date-finished"></td>
+        <td><button class="button button-primary">Add Book</button></td>
+      </form>
+    </tbody>
+  </table>
+</body>
+</html>
