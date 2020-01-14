@@ -6,6 +6,10 @@ h1 {
   text-align: center;
 }
 
+td, th {
+  text-align: center;
+}
+
 .date-selector {
   height: 38px;
   padding: 6px 10px;
@@ -42,9 +46,20 @@ h1 {
   color: white;
 }
 
+.button-delete {
+  font-size: 20px;
+  color: #FF2C54;
+  text-decoration: none;
+}
+
+.button-delete:hover {
+  color: #FF2C54;
+  cursor: pointer;
+}
+
 .button-edit {
   color: white;
-  background-color: #FF2C54;
+  background-color: #FECA1F;
 }
 
 .button-edit:hover {
@@ -53,4 +68,9 @@ h1 {
 
 .button {
   width: 130px;
+  padding: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }

@@ -23,22 +23,28 @@ Front End
 [X] Create page header
 [X] Add sample books and style inline
 [X] Create form to input books (title, author, status, date finished)
-[ ] Add event listener for form submit on <a> tag
+[X] Add event listener for form submit on <a> tag
 [X] Make form inline and sleek
-[ ] Establish POST request for /books
+[X] Establish POST request for /books
+[X] Change delete button to red 'x'
+[X] Delete list before adding new list
+[ ] Allow user to change read status
+[ ] Allow user to edit date finished
+[ ] Allow user to edit entries
 
 
 Server
-[ ] Setup app and server packages
-[ ] Setup listening port
-[ ] Create db connection
-[ ] Grab all books and put in db
-[ ] Handle GET requests for /
-[ ] Handle GET requests for /books
-    [ ] Find all books in db and return
-[ ] Handle POST request for /books
-    [ ] Create book
-    [ ] Insert book into db
+[X] Setup app and server packages
+[X] Setup listening port
+[X] Create db connection
+[X] Handle GET requests for /
+[X] Handle GET requests for /books
+    [X] Find all books in db and return
+[X] Handle POST request for /books
+    [X] Create book
+    [X] Insert book into db
+[ ] Connect to MongoDB
+[ ] Setup user accounts (registration, password, individual db's)
 
 
 

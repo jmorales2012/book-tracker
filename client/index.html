@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Book Tracker</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
       <a href="#" class="button button-primary">Sign Up</a>
   </div>
   <h1>Book Tracker</h1>
-  <table class="center width-80 book-container">
+  <table class="width-80 center book-container">
     <thead class="book-info">
       <tr>
         <th>Title</th>
@@ -24,33 +25,39 @@
         <th>Add/Delete</th>
       </tr>
     </thead>
+    <tbody>
+      <tr>
+        <form id="new-book">
+          <td><input class="mb-0" type="text" id="title" name="title" placeholder="Title"></td>
+          <td><input class="mb-0" type="text" id="author" name="author" placeholder="Author"></td>
+          <td><select class="mb-0" id="status" name="status">
+            <option value="Read">Read</option>
+            <option value="Reading">Reading</option>
+            <option value="Not Read">Not Read</option>
+          </select>
+          <td><input class="mb-0 date-selector" id="date-finished" type="date" name="date-finished"></td>
+          <td><button class="mb-0 button button-primary">Add Book</button></td>
+        </form>
+      </tr>
+    </tbody>
     <tbody class="books">
-      <tr class="book">
+      <!-- <tr class="book">
         <td>Extreme Ownership</td>
-        <td>Jocko Wilick</td>
+        <td>Jocko Willink</td>
         <td>Reading</td>
         <td></td>
-        <td><a href="#" class="button button-edit">Delete</a></td>
+        <td><a href="#" class="button-delete fa fa-times"></a></td>
       </tr>
       <tr class="book">
         <td>Sam Walton: Made in America</td>
         <td>Sam Walton</td>
         <td>Not Read</td>
         <td></td>
-        <td><a href="#" class="button button-edit">Delete</a></td>
-      </tr>
-      <form class="tr">
-        <td><input type="text" placeholder="Title"></td>
-        <td><input type="text" placeholder="Author"></td>
-        <td><select name="status" id="status">
-          <option value="read">Read</option>
-          <option value="reading">Reading</option>
-          <option value="not-read">Not Read</option>
-        </select></td>
-        <td><input class="date-selector" type="date" name="date-finished"></td>
-        <td><button class="button button-primary">Add Book</button></td>
-      </form>
+        <td><a href="#" class="button-delete fa fa-times"></a></td>
+      </tr> -->
+      
     </tbody>
   </table>
+  <script src="client.js"></script>
 </body>
 </html>
