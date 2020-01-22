@@ -64,6 +64,18 @@ app.post('/books', (req, res) => {
   }
 });
 
+// handle updates
+
+
+// route for deleting books
+app.delete('/book/:id', (req, res) => {
+  let id = req.params.id;
+  books.remove({ _id: id })
+    .then(deletedBook => {
+      res.json(deletedBook);
+    })
+})
+
 
 
 app.listen(5000, () => {

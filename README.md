@@ -28,6 +28,7 @@ Front End
 [X] Establish POST request for /books
 [X] Change delete button to red 'x'
 [X] Delete list before adding new list
+[X] Let user delete book
 [ ] Allow user to change read status
 [ ] Allow user to edit date finished
 [ ] Allow user to edit entries
