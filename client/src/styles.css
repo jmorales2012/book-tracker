@@ -59,12 +59,14 @@ td, th {
 
 .button-edit {
   font-size: 20px;
-  color: #FECA1F;
+  /* color: #FECA1F; */
+  color: #1BC106;
   text-decoration: none;
 }
 
 .button-edit:hover {
-  color: #FECA1F;
+  /* color: #FECA1F; */
+  color: #1BC106;
   cursor: pointer;
 }
 
@@ -75,4 +77,53 @@ td, th {
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+header div {
+  width: 156px;
+}
+
+.row {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.row * {
+  margin: 5px 10px;
+  flex: 1;
+  /* border: 1px solid red; */
+}
+
+.header-title {
+  font-size: 20px;
+}
+
+#books {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+
+.book {
+  /* margin: 0 10px; */
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
 }

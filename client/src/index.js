@@ -1,5 +1,14 @@
+import { displayMenu } from './menu.js';
+import { displayLayout } from './layout.js';
+import { displayInlineBookForm } from './inlineBookForm.js';
+
+
+displayMenu();
+displayLayout();
+displayInlineBookForm();
+
 const newBookForm = document.querySelector('form');
-const booksElement = document.querySelector('.books');
+const booksElement = document.querySelector('#books');
 const deleteButton = document.querySelector('.button-delete');
 
 // create api link
@@ -71,38 +80,43 @@ const listAllBooks = () => {
     .then(response => response.json())
     .then(books => {
       books.forEach(book => {
-        // create tr and append the book info
-        const tr = document.createElement('tr');
-        tr.setAttribute('id', book._id);
-        tr.classList.toggle('book');
+        // create row and append the book info
+        const newBook = document.createElement('div');
+        // newBook.classList.add('row');
+        newBook.setAttribute('id', book._id);
+        newBook.classList.toggle('book');
 
-        const title = document.createElement('td');
+        const title = document.createElement('div');
         title.textContent = book.title;
 
-        const author = document.createElement('td');
+        const author = document.createElement('div');
         author.textContent = book.author;
 
-        const status = document.createElement('td');
+        const status = document.createElement('div');
         status.textContent = book.status;
 
-        const dateFinished = document.createElement('td');
+        const dateFinished = document.createElement('div');
         dateFinished.textContent = book.dateFinished;
 
-        const buttonsTD = document.createElement('td');
+        const buttonsDiv = document.createElement('div');
         const delButton = document.createElement('a');
         delButton.classList.add('button-delete', 'fa', 'fa-times');
         const editButton = document.createElement('a');
-        editButton.classList.add('button-edit', 'fa', 'fa-pencil-alt');
-        buttonsTD.appendChild(delButton);
-        buttonsTD.appendChild(editButton);
+        editButton.classList.add('button-edit', 'fa', 'fa-pencil');
+        buttonsDiv.appendChild(delButton);
+        buttonsDiv.appendChild(editButton);
 
-        tr.appendChild(title);
-        tr.appendChild(author);
-        tr.appendChild(status);
-        tr.appendChild(dateFinished);
-        tr.appendChild(buttonsTD);
+        // editButton.innerText = 'Button';
+
+        newBook.appendChild(title);
+        newBook.appendChild(author);
+        newBook.appendChild(status);
+        newBook.appendChild(dateFinished);
+        newBook.appendChild(buttonsDiv);
   
-        booksElement.appendChild(tr);
+        booksElement.appendChild(newBook);
+        // console.log(booksElement);
+        // console.log(newBook);
       });
     })
   };
